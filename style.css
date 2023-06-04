@@ -3,22 +3,77 @@ body, html {
     box-sizing: border-box;
 }
 
+.srchbar:focus {
+  border-color: rgba(210, 210, 210, 0.515);
+  box-shadow: 0 0 0 0;
+}
+
+.srchbar {
+  border-left: none;
+  padding-left: 0px;
+
+}
+
+.addBtn:hover {
+  background-color: white;
+}
+
+.addBtn:active {
+  border-color: rgba(210, 210, 210, 0.515);
+  box-shadow: 0 0 0 0;
+  color: white;
+  background-color: #77260C;
+  border-color: #77260C;
+
+}
+
+.addBtn:focus {
+  border-color: rgba(210, 210, 210, 0.515);
+  box-shadow: 0 0 0 0;
+
+}
+
+.icon {
+  border-right: none;
+}
+
 .dropdown-item:hover {
     background-color: rgba(119, 39, 12, 0.729) !important;
     -webkit-text-fill-color: white;
 }
 
+.btn-light {
+  width: 180px;
+}
+
+.btn-light:hover {
+  background-color: white;
+  border: none;
+}
+
+.btn-light:active {
+  background-color: white;
+  border: none;
+
+}
+
+.favButton {
+  background-color: none;
+  border: none;
+  width: fit-content;
+}
+
 .btn-secondary {
-    color: white;
-    background-color: #77260C;
-    border-color: #77260C;
-  }
+  color: white;
+  background-color: #77260C;
+  border-color: #77260C;
+}
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #77260C;
-    border-color: #77260C;
- }
+  color: #fff;
+  background-color: #77260C;
+  border-color: #77260C;
+}
 
  .btn-search {
   color: #77260C;
@@ -169,10 +224,10 @@ button.disabled {
 }
 
 #view {
-  top: 93%;
   right: 0;
   position: absolute;
   border-radius: 6px 0 6px 6px;
+  margin-bottom: 0px;
 }
 
 #ingredient ul {
