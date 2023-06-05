@@ -647,6 +647,7 @@
       </ul>
     </footer>
   </div>
+
   <!-------------------------------Login Modal -------------------------------->
   <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -656,15 +657,15 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="LoginForm" action="home.html" method="POST" class="needs-validation" novalidate>
+          <form id="LoginForm">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" >
               <div class="invalid-feedback">Please enter email address.</div>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" required>
+              <input type="password" class="form-control" id="password" >
               <div class="invalid-feedback">Please enter password.</div>
             </div>
             <a class="btn btn-secondary" href="home.html">Sign In</a>
@@ -683,23 +684,23 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="registerForm" action="home.html" method="POST" class="needs-validation" novalidate>
+          <form id="registerForm">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
+              <input type="text" class="form-control" id="name" >
               <div class="invalid-feedback">Please enter full name.</div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" required>
+              <input type="email" class="form-control" id="email" >
               <div class="invalid-feedback">Please enter an email address.</div>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" required>
+              <input type="password" class="form-control" id="password" >
               <div class="invalid-feedback">Please enter password.</div>
             </div>
-            <button type="submit" class="btn btn-secondary">Register</button>
+            <a class="btn btn-secondary" href="home.html">Register</a>
           </form>
         </div>
       </div>
