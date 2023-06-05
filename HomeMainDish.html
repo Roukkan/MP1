@@ -154,7 +154,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary pt-4">
       
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="home.html">
           <img src="KK3.png" alt="Bootstrap" width="60" height="60"> KitchenKonnect
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,12 +167,12 @@
                   Recipes
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
-                  <li><a class="dropdown-item" href="appetizer.html">Appetizers</a></li>
-                  <li><a class="dropdown-item" href="MainDish.html">Main Dishes</a></li>
-                  <li><a class="dropdown-item" href="Soups.html">Soups & Stews</a></li>
-                  <li><a class="dropdown-item" href="vegan.html">Vegetarian</a></li>
-                  <li><a class="dropdown-item" href="dessert.html">Desserts</a></li>
+                  <li><a class="dropdown-item" href="Homebreakfast.html">Breakfast</a></li>
+                  <li><a class="dropdown-item" href="Homeappetizer.html">Appetizers</a></li>
+                  <li><a class="dropdown-item" href="HomeMainDish.html">Main Dishes</a></li>
+                  <li><a class="dropdown-item" href="HomeSoups.html">Soups & Stews</a></li>
+                  <li><a class="dropdown-item" href="Homevegan.html">Vegetarian</a></li>
+                  <li><a class="dropdown-item" href="Homedessert.html">Desserts</a></li>
                 </ul>
               </li>
 
@@ -190,6 +190,10 @@
               </li>
 
               <li class="nav-item">
+                <a class="nav-link" href="favorites.html">My Favorites</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
               </li>
 
@@ -201,12 +205,17 @@
               </div>
             </form>
        
-
-            <div class="d-flex bg-body-tertiary btn-group LR-button" role="group" aria-label="login buttons">
-              <button type="button" class="btn btn-secondary pt-3 l-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-              <button type="button" class="btn btn-secondary pt-3 r-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            <div class="btn-group">
+              <button class="btn btn-light btn dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="bi bi-person-circle" id="basic-addon1"></span>
+                Lorem Ipsum
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Feedback & Support</a></li>
+                <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              </ul>
             </div>
-            
         </div>
       </div>
     </nav>
@@ -216,51 +225,51 @@
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Desserts</li>
+          <li class="breadcrumb-item active" aria-current="page">Main Dishes</li>
         </ol>
       </nav>
-      <p class="text-uppercase fs-2 fw-light">Dessert Recipes</p>
+      <p class="text-uppercase fs-2 fw-light">Main Dish Recipes</p>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mt-4">
             <div class="card">
-              <img src="Ube-Halaya.jpg" class="card-img-top" alt="Halaya">
+              <img src="gising.jpg" class="card-img-top" alt="ArrozCaldo">
               <div class="card-body">
-                <h5 class="card-title">Ube Halaya With Cheese</h5>
+                <h5 class="card-title">Chicken Gising-gising</h5>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ubeModal">View Recipe</a>
+                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#gisingModal">View Recipe</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4  mt-4">
             <div class="card">
-              <img src="leche-flan.jpg" class="card-img-top" alt="ArrozCaldo">
+              <img src="adobo.jpg" class="card-img-top" alt="ArrozCaldo">
               <div class="card-body">
-                <h5 class="card-title">Leche Flan</h5>
+                <h5 class="card-title">Pork Adobo</h5>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#FlanModal">View Recipe</a>
+                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#AdoboModal">View Recipe</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4  mt-4">
             <div class="card">
-              <img src="halo-halo.jpg" class="card-img-top" alt="ArrozCaldo">
+              <img src="tilapia.jpg" class="card-img-top" alt="ArrozCaldo">
               <div class="card-body">
-                <h5 class="card-title">Halo Halo</h5>
+                <h5 class="card-title">Sweet and Sour Tilapia</h5>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#halohaloModal">View Recipe</a>
+                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#tilapiaModal">View Recipe</a>
               </div>
             </div>
           </div>
@@ -268,17 +277,17 @@
       </div>
     </div>
 
- <!------------------------------- ube modal ------------------------------->
-<div class="modal fade" id="ubeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <!------------------------------- gising-gising modal ------------------------------->
+<div class="modal fade" id="gisingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Ube Halaya With Cheese</h2>
+        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Crispy Cabbage Rolls</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
       <div class="modal-body" id="ingredient">
-        <img src="Ube-Halaya.jpg" alt="" id="BFimg" class="mb-3">
+        <img src="gising.jpg" alt="" id="BFimg" class="mb-3">
         <div class="row">
           <div class="col pt-1">
             <span class="fa fa-star checked"></span>
@@ -288,26 +297,26 @@
             <span class="fa fa-star checked"></span>
           </div>
           <div class="col d-flex justify-content-end Chk1">
-            <!-- <label for="id-of-input1" class="custom-checkbox1 FavLabel pt-0 mt-0">
-              <input type="checkbox" id="id-of-input1"/>
+            <label for="id-of-input1" class="custom-checkbox1 FavLabel pt-0 mt-0">
+              <input type="checkbox" id="id-of-input1" checked/>
               <i class="bi bi-bookmark-heart "></i>
               <i class="bi bi-bookmark-heart-fill "></i>
               <span>Favorite</span>
-            </label> -->
+            </label>
           </div>
         </div>
         <br>
         <br>
         <div class="container-">
-          <h3 class="fw-bold">Ube Halaya With Cheese</h3>
-          <p class="fst-italic">This is a recipe for Ube Halaya with Cheese</p>
+          <h3 class="fw-bold">Chicken Gising-gising</h3>
+          <p class="fst-italic">Spicy chicken stew wherein chicken pieces are cooked with winged beans and coconut milk</p>
           <label class="fw-bold">Recipe by: </label>
           <label>Lorem Ipsum</label>
           <br>
               <ul>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 5 minutes</li>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 45 hour</li>
-                <li><label class="fw-bold">Total:</label> 50 minutes</li>
+                <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 10 minutes</li>
+                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 35 minutes</li>
+                <li><label class="fw-bold">Total:</label> 45 minutes</li>
               </ul>
           <hr>
         </div>
@@ -315,25 +324,31 @@
         <p class="fs-4">Ingredients</p>
           <form>
             <ul>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="ube1" class="form-check-input chkbox"> <label for="ube1" class="fst-normal text-black">1 lb. grated purple yam</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="ube2" class="form-check-input chkbox">  <label for="ube2" class="fst-normal text-black">1 14 oz. can condensed milk</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="ube3" class="form-check-input chkbox">  <label for="ube3" class="fst-normal text-black">2 cups coconut milk</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="ube4" class="form-check-input chkbox">  <label for="ube4" class="fst-normal text-black">3 tablespoons butter</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="ube5" class="form-check-input chkbox">  <label for="ube5" class="fst-normal text-black">1 teaspoon ube flavoring</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="ube6" class="form-check-input chkbox">  <label for="ube6" class="fst-normal text-black">1/2 cup shredded cheddar cheese</label></li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising1" class="form-check-input chkbox"> <label for="gising1" class="fst-normal text-black">2 lbs. chicken </label> (cut into serving pieces)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising2" class="form-check-input chkbox">  <label for="gising2" class="fst-normal text-black">90 grams Knorr Ginataang Gulay Mix</label></li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising3" class="form-check-input chkbox">  <label for="gising3" class="fst-normal text-black">½ lb. winged bean</label> (sigarilyas, sliced)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising4" class="form-check-input chkbox">  <label for="gising4" class="fst-normal text-black">2 long green chili pepper</label> (sliced)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising5" class="form-check-input chkbox">  <label for="gising5" class="fst-normal text-black">5 Thai chili pepper</label> (optional)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising6" class="form-check-input chkbox">  <label for="gising6" class="fst-normal text-black">1 tablespoon shrimp paste</label></li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising7" class="form-check-input chkbox">  <label for="gising7" class="fst-normal text-black">3 cups water</label></li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising8" class="form-check-input chkbox">  <label for="gising8" class="fst-normal text-black">1 onion</label> (chopped)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising9" class="form-check-input chkbox">  <label for="gising9" class="fst-normal text-black">5 cloves garlic</label> (chopped)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising10" class="form-check-input chkbox">  <label for="gising10" class="fst-normal text-black">2 thumbs ginger</label> (chopped)</li>
+              <li class="fst-italic text-secondary"><input type="checkbox" value="" id="gising11" class="form-check-input chkbox">  <label for="gising11" class="fst-normal text-black">3 tablespoons cooking oil</label></li>
             </ul>
         </form>
         <hr>
         <p class="fs-4 mt-0">Instructions</p>
         <ol type="1">
-          <li>Pour coconut milk in a cooking pot. Let boil.</li>
-          <li>Stir and add the condensed milk.</li>
-          <li>Once the mixture starts to boil, add the grated purple yam and ube flavoring. 
-              Continue to cook in medium heat while continuously stirring for 30 minutes.</li>
-          <li>Add butter. Stir. Cook until the mixture reaches your desired thickness. 
-              (I usually cook it for 10 to 12 minutes after adding butter).</li>
-          <li>Transfer to a container. Top with shredded cheese.</li>
-          <li>Serve. Share and enjoy!</li>
+          <li>Heat oil in a pan. Sauté garlic, onion, and ginger.</li>
+          <li>Add chicken pieces. Stir fry until the exterior turns light brown in color.</li>
+          <li>Add 1 cup water. Let boil.</li>
+          <li>Combine Knorr Ginataang Gulay Mix with 2 cups water. Mix well and then pour into the pan. 
+              Cover and continue cooking between low to medium heat setting for 20 minutes.</li>
+          <li>Add shrimp paste, long green pepper, and winged beans. Cover the pan and continue cooking for 5 minutes.</li>
+          <li>Add Thai chili peppers if desired. Cook for 2 minutes more.</li>
+          <li>Transfer to a serving bowl. Serve hot with rice.</li>
+          <li>Share and enjoy!</li>
         </ol>
 
         <hr>
@@ -388,17 +403,17 @@
   </div>
 </div>
     
-<!------------------------------- Leche Flan modal ------------------------------->
-<div class="modal fade" id="FlanModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!------------------------------- adobo modal ------------------------------->
+<div class="modal fade" id="AdoboModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Leche Flan</h2>
+        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Pork Adobo</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
       <div class="modal-body" id="ingredient">
-        <img src="leche-flan.jpg" alt="" id="BFimg" class="mb-3">
+        <img src="adobo.jpg" alt="" id="BFimg" class="mb-3">
         <div class="row">
           <div class="col pt-1">
             <span class="fa fa-star checked"></span>
@@ -408,26 +423,26 @@
             <span class="fa fa-star checked"></span>
           </div>
           <div class="col d-flex justify-content-end Chk2">
-            <!-- <label for="id-of-input2" class="custom-checkbox2 FavLabel pt-0 mt-0">
+            <label for="id-of-input2" class="custom-checkbox2 FavLabel pt-0 mt-0">
               <input type="checkbox" id="id-of-input2" checked/>
               <i class="bi bi-bookmark-heart "></i>
               <i class="bi bi-bookmark-heart-fill "></i>
               <span>Favorite</span>
-            </label> -->
+            </label>
           </div>
         </div>
         <br>
         <br>
         <div class="container-">
-          <h3 class="fw-bold">Leche Flan</h3>
-          <p class="fst-italic">This is a simple and easy version of a famous Filipino dessert known as Leche Flan.</p>
+          <h3 class="fw-bold">Pork Adobo</h3>
+          <p class="fst-italic">Basic Filipino Pork Adobo with Soy Sauce, Vinegar, and Garlic. This delicious dish is perfect when served over newly cooked white rice.  </p>
           <label class="fw-bold">Recipe by: </label>
           <label>Lorem Ipsum</label>
           <br>
               <ul>
                 <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 10 minutes</li>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 45 minutes</li>
-                <li><label class="fw-bold">Total:</label> 55 minutes</li>
+                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 1 hour</li>
+                <li><label class="fw-bold">Total:</label> 1 hour 10 minutes</li>
               </ul>
           <hr>
         </div>
@@ -435,30 +450,26 @@
         <p class="fs-4">Ingredients</p>
           <form>
             <ul>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="flan1" class="form-check-input chkbox"> <label for="flan1" class="fst-normal text-black">10 pieces eggs</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="flan2" class="form-check-input chkbox">  <label for="flan2" class="fst-normal text-black">1 can condensed milkr</label> (14 oz)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="flan3" class="form-check-input chkbox">  <label for="flan3" class="fst-normal text-black">1 cup fresh milk</label> (or evaporated milk)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="flan4" class="form-check-input chkbox">  <label for="flan4" class="fst-normal text-black">1 cup granulated sugar</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="flan5" class="form-check-input chkbox">  <label for="flan5" class="fst-normal text-black">1 teaspoon vanilla extract</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo1" class="form-check-input chkbox"> <label for="adobo1" class="fst-normal text-black">2 lbs pork belly</label> (cut into serving pieces)</li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo2" class="form-check-input chkbox">  <label for="adobo2" class="fst-normal text-black">2 tablespoons garlic</label> (chopped)</li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo3" class="form-check-input chkbox">  <label for="adobo3" class="fst-normal text-black">5 dried bay leaves</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo4" class="form-check-input chkbox">  <label for="adobo4" class="fst-normal text-black">4 tablespoons vinegar</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo5" class="form-check-input chkbox">  <label for="adobo5" class="fst-normal text-black">1/2 cup soy sauce</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo6" class="form-check-input chkbox">  <label for="adobo6" class="fst-normal text-black">1 tablespoon peppercorn</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo7" class="form-check-input chkbox">  <label for="adobo7" class="fst-normal text-black">2 cups water</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="adobo8" class="form-check-input chkbox">  <label for="adobo8" class="fst-normal text-black">Salt to taste</label></li>
             </ul>
         </form>
         <hr>
         <p class="fs-4 mt-0">Instructions</p>
         <ol type="1">
-          <li>Using all the eggs, separate the yolk from the egg white (only egg yolks will be used).</li>
-          <li>Place the egg yolks in a big bowl then beat them using a fork or an egg beater.</li>
-          <li>Add the condensed milk and mix thoroughly.</li>
-          <li>Pour-in the fresh milk and Vanilla. Mix well.</li>
-          <li>Put the mold (llanera) on top of the stove and heat using low fire.</li>
-          <li>Put-in the granulated sugar on the mold and mix thoroughly until the solid sugar turns into liquid (caramel) having a light brown color. 
-              Note: Sometimes it is hard to find a Llanera (Traditional flan mold) depending on your location. I find it more convenient to use individual 
-              Round Pans in making leche flan.</li>
-          <li>Spread the caramel (liquid sugar) evenly on the flat side of the mold.</li>
-          <li>Wait for 5 minutes then pour the egg yolk and milk mixture on the mold.</li>
-          <li>Cover the top of the mold using an Aluminum foil.</li>
-          <li>Steam the mold with egg and milk mixture for 30 to 35 minutes.</li>
-          <li>After steaming, let the temperature cool down then refrigerate</li>
-          <li>Serve for dessert. Share and Enjoy!</li>
+          <li>Combine the pork belly, soy sauce, and garlic then marinade for at least 1 hour.</li>
+          <li>Heat the pot and put-in the marinated pork belly then cook for a few minutes.</li>
+          <li>Pour remaining marinade including garlic.</li>
+          <li>Add water, whole pepper corn, and dried bay leaves then bring to a boil. Simmer for 40 minutes to 1 hour.</li>
+          <li>Put-in the vinegar and simmer for 12 to 15 minutes.</li>
+          <li>Add salt to taste.</li>
+          <li>Serve hot. Share and enjoy!</li>
         </ol>
 
         <hr>
@@ -508,17 +519,17 @@
   </div>
 </div>
 
- <!------------------------------- halohalo modal ------------------------------->
- <div class="modal fade" id="halohaloModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <!------------------------------- tilapia modal ------------------------------->
+ <div class="modal fade" id="tilapiaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel" >Halo Halo</h2>
+        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel" >Sweet and Sour Tilapia</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       
       <div class="modal-body" id="ingredient">
-        <img src="halo-halo.jpg" alt="" id="BFimg" class="mb-3">
+        <img src="tunaSisig.jpg" alt="" id="BFimg" class="mb-3">
         <div class="row">
           <div class="col pt-1">
             <span class="fa fa-star checked"></span>
@@ -528,26 +539,26 @@
             <span class="fa fa-star checked"></span>
           </div>
           <div class="col d-flex justify-content-end Chk3">
-            <!-- <label for="id-of-input3" class="custom-checkbox3 FavLabel pt-0 mt-0">
+            <label for="id-of-input3" class="custom-checkbox3 FavLabel pt-0 mt-0">
               <input type="checkbox" id="id-of-input3"/>
               <i class="bi bi-bookmark-heart "></i>
               <i class="bi bi-bookmark-heart-fill "></i>
               <span>Favorite</span>
-            </label> -->
+            </label>
           </div>
         </div>
         <br>
         <br>
         <div class="container-">
-          <h3 class="fw-bold">Halo Halo</h3>
-          <p class="fst-italic">Halo-halo is a famous dessert in the Philippines. It is composed of various ingredients that are all mixed together, along with shaved ice and evaporated milk.</p>
+          <h3 class="fw-bold">Sweet and Sour Tilapia</h3>
+          <p class="fst-italic">Crispy Fried Tilapia cooked in a tasty sweet and sour sauce.</p>
           <label class="fw-bold">Recipe by: </label>
           <label>Lorem Ipsum</label>
           <br>
               <ul>
                 <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 10 minutes</li>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 10 minutes</li>
-                <li><label class="fw-bold">Total:</label> 20 minutes</li>
+                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 30 minutes</li>
+                <li><label class="fw-bold">Total:</label> 40 minutes</li>
               </ul>
           <hr>
         </div>
@@ -555,28 +566,36 @@
         <p class="fs-4">Ingredients</p>
           <form>
             <ul>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo1" class="form-check-input chkbox"> <label for="halo1" class="fst-normal text-black">2 cups of shaved ice</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo2" class="form-check-input chkbox">  <label for="halo2" class="fst-normal text-black">1 ripe large banana</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo3" class="form-check-input chkbox">  <label for="halo3" class="fst-normal text-black">1 cup young shredded coconut</label> (fresh or bottled)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo4" class="form-check-input chkbox">  <label for="halo4" class="fst-normal text-black">1/2 cup sweet corn or chickpeas</label> (garbanzos)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo5" class="form-check-input chkbox">  <label for="halo5" class="fst-normal text-black">2 cups evaporated milk</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo6" class="form-check-input chkbox">  <label for="halo6" class="fst-normal text-black">1 cup firm gelatin set into a gel</label> (cut into 1/2 inch cubes)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo7" class="form-check-input chkbox">  <label for="halo7" class="fst-normal text-black">2 ripe mangoes</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo8" class="form-check-input chkbox">  <label for="halo8" class="fst-normal text-black">1 cup ripe jackfruit</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo9" class="form-check-input chkbox">  <label for="halo9" class="fst-normal text-black">1 cup cooked sweet yams or ube halaya</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo10" class="form-check-input chkbox">  <label for="halo10" class="fst-normal text-black">4 scoops of favorite ice cream</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="halo11" class="form-check-input chkbox">  <label for="halo11" class="fst-normal text-black">1/2 cup rice crispies</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia1" class="form-check-input chkbox"> <label for="tilapia1" class="fst-normal text-black">2 pieces tilapia</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia2" class="form-check-input chkbox">  <label for="tilapia2" class="fst-normal text-black">2 tablespoons Knorr Liquid Seasoning</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia3" class="form-check-input chkbox">  <label for="tilapia3" class="fst-normal text-black">1 piece red bell pepper</label> (julienne)</li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia4" class="form-check-input chkbox">  <label for="tilapia4" class="fst-normal text-black">1 piece green bell pepper</label> (julienne)</li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia5" class="form-check-input chkbox">  <label for="tilapia5" class="fst-normal text-black">1 piece carrot</label> (julienne)</li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia6" class="form-check-input chkbox">  <label for="tilapia6" class="fst-normal text-black">5 cloves garlic</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia7" class="form-check-input chkbox">  <label for="tilapia7" class="fst-normal text-black">1 piece onion</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia8" class="form-check-input chkbox">  <label for="tilapia8" class="fst-normal text-black">2 thumbs ginger</label> (julienne)</li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia9" class="form-check-input chkbox">  <label for="tilapia9" class="fst-normal text-black">2 tablespoons cornstarch</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia10" class="form-check-input chkbox">  <label for="tilapia10" class="fst-normal text-black">2 cups water</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia11" class="form-check-input chkbox">  <label for="tilapia11" class="fst-normal text-black">5 1/2 tablespoons white vinegar</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia12" class="form-check-input chkbox">  <label for="tilapia12" class="fst-normal text-black">8 tablespoons tomato ketchup</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia13" class="form-check-input chkbox">  <label for="tilapia13" class="fst-normal text-black">7 tablespoons white sugar</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia14" class="form-check-input chkbox">  <label for="tilapia14" class="fst-normal text-black">1 ¼ cup cooking oil</label></li>
+                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tilapia15" class="form-check-input chkbox">  <label for="tilapia15" class="fst-normal text-black">Salt and ground black pepper to taste</label></li>
             </ul>
         </form>
         <hr>
         <p class="fs-4 mt-0">Instructions</p>
         <ol type="1">
-          <li>Peel mangoes and slice into half-inch cubes.</li>
-          <li>Divide each ingredient into 4 equal parts. Get 4 tall glasses, then place each ingredients layer by layer.</li>
-          <li>Put the one-half cup of shaved ice to each glass.</li>
-          <li>Pour a quarter of milk evap over shaved ice to each glass.</li>
-          <li>Put a scoop of ice cream on top.</li>
-          <li>Drizzle some nuts or rice crispies on top of the ice cream.</li>
+          <li>Apply Knorr Liquid Seasoning all over the tilapia. Let it stand for 10 minutes so that the fish can absorb the flavor of the seasoning.</li>
+          <li>Heat around 1 cup of cooking oil in a pan. Once the oil gets hot, fry the fish until the color turns golden brown. Flip to fry the opposite side. Remove from the pan. Place on a clean plate. Set aside.</li>
+          <li>Make the sauce by heating 3 tablespoons of cooking oil in a cooking pot. Saute onion and garlic for 10 seconds. Add ginger. Saute for 12 seconds.</li>
+          <li>Pour white vinegar and water. Let boil.</li>
+          <li>Add tomato ketchup. Stir until it completely dilutes in the mixture.</li>
+          <li>Add sugar. Stir until the sugar gets fully incorporated.</li>
+          <li>Put carrots and bell peppers. Cook for 3 minutes.</li>
+          <li>Combine cornstarch and 3 tablespoons water. Mix well. Pour into the cooking pot. Stir until sauce thickens.</li>
+          <li>Season with salt and ground black pepper. Add a piece of tilapia and cook for 3 minutes.</li>
+          <li>Transfer to a serving plate. Serve with rice. Share and enjoy!</li>
         </ol>
 
         <hr>

@@ -23,7 +23,7 @@
      <nav class="navbar navbar-expand-lg bg-body-tertiary pt-4">
       
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="home.html">
           <img src="KK3.png" alt="Bootstrap" width="60" height="60"> KitchenKonnect
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,12 +36,12 @@
                   Recipes
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
-                  <li><a class="dropdown-item" href="appetizer.html">Appetizers</a></li>
-                  <li><a class="dropdown-item" href="MainDish.html">Main Dishes</a></li>
-                  <li><a class="dropdown-item" href="Soups.html">Soups & Stews</a></li>
-                  <li><a class="dropdown-item" href="vegan.html">Vegetarian</a></li>
-                  <li><a class="dropdown-item" href="dessert.html">Desserts</a></li>
+                  <li><a class="dropdown-item" href="Homebreakfast.html">Breakfast</a></li>
+                  <li><a class="dropdown-item" href="Homeappetizer.html">Appetizers</a></li>
+                  <li><a class="dropdown-item" href="HomeMainDish.html">Main Dishes</a></li>
+                  <li><a class="dropdown-item" href="HomeSoups.html">Soups & Stews</a></li>
+                  <li><a class="dropdown-item" href="Homevegan.html">Vegetarian</a></li>
+                  <li><a class="dropdown-item" href="Homedessert.html">Desserts</a></li>
                 </ul>
               </li>
 
@@ -59,6 +59,10 @@
               </li>
 
               <li class="nav-item">
+                <a class="nav-link" href="favorites.html">My Favorites</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
               </li>
 
@@ -70,12 +74,17 @@
               </div>
             </form>
        
-
-            <div class="d-flex bg-body-tertiary btn-group LR-button" role="group" aria-label="login buttons">
-              <button type="button" class="btn btn-secondary pt-3 l-btn" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
-              <button type="button" class="btn btn-secondary pt-3 r-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            <div class="btn-group">
+              <button class="btn btn-light btn dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="bi bi-person-circle" id="basic-addon1"></span>
+                Lorem Ipsum
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Feedback & Support</a></li>
+                <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              </ul>
             </div>
-            
         </div>
       </div>
     </nav>
@@ -131,7 +140,7 @@
       <h3 class="text-center fw-light text-uppercase">Categories</h3>
       <div class="owl-carousel owl-theme">
         <div class="item">
-          <a href="breakfast.html">
+          <a href="Homebreakfast.html">
             <div class="card">
               <div class="card-img">
                 <img src="breakfast.jpg" class="img-fluid">
@@ -141,7 +150,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="appetizer.html">
+          <a href="Homeappetizer.html">
             <div class="card">
                 <div class="card-img">
                   <img src="snacks.jpg" class="img-fluid">
@@ -151,7 +160,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="MainDish.html">
+          <a href="HomeMainDish.html">
             <div class="card">
               <div class="card-img">
                 <img src="main.jpg" class="img-fluid">
@@ -161,7 +170,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="Soups.html">
+          <a href="HomeSoups.html">
             <div class="card">
               <div class="card-img">
                 <img src="soups.jpg" class="img-fluid">
@@ -171,7 +180,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="vegan.html">
+          <a href="Homevegan.html">
             <div class="card">
               <div class="card-img">
                 <img src="vegan.jpg" class="img-fluid">
@@ -181,7 +190,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="dessert.html">
+          <a href="Homedessert.html">
             <div class="card">
               <div class="card-img">
                 <img src="dessert.jpg" class="img-fluid">
@@ -411,6 +420,7 @@
   </div>
   <!-- Inner -->
 </div>
+<!-- Carousel wrapper -->
 <!------------------------------- Footer ------------------------------->
   <div class="container-fluid mt-5 pt-5">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -426,36 +436,6 @@
       </ul>
     </footer>
   </div>
-
-
-  <!-------------------------------Login Modal -------------------------------->
-<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="LoginModal">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form class="row needs-validation" novalidate>
-          <div class="col-md-4 position-relative">
-            <label for="validationTooltip01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationTooltip01" value="" required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-        
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-secondary" onclick="window.location.href='home.html'">Login</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 <!------------------------------- Category owl-carousel ------------------------------->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
@@ -481,7 +461,6 @@
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 
-      <!-------------------------------Owl carousel script -------------------------------->
     <script>
       $(document).ready(function ($) {
       $(".owl-carousel").owlCarousel({
