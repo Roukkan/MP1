@@ -13,31 +13,49 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KitchenKonnect</title>
-    
+
     <link rel="icon" type="image/x-icon" href="kk3_lMv_icon.ico">
 
-    
     <style>
-
       /* arroz caldo fav button     */
-     .Chk1 .FavLabel {
+     .Chk1 .FavLabel,
+     .Chk2 .FavLabel, 
+     .Chk3 .FavLabel, 
+     .Chk4 .FavLabel, 
+     .Chk5 .FavLabel, 
+     .Chk6 .FavLabel {
        /* Presentation */
        font-size: 25px
      }
 
      /* Required Styling */
 
-     .Chk1 .FavLabel input[type="checkbox"] {
+     .Chk1 .FavLabel input[type="checkbox"],
+     .Chk2 .FavLabel input[type="checkbox"],
+     .Chk3 .FavLabel input[type="checkbox"],
+     .Chk4 .FavLabel input[type="checkbox"],
+     .Chk5 .FavLabel input[type="checkbox"],
+     .Chk6 .FavLabel input[type="checkbox"] {
        display: none;
      }
 
-     .Chk1 .custom-checkbox1 {
+     .Chk1 .custom-checkbox1,
+     .Chk2 .custom-checkbox2,
+     .Chk3 .custom-checkbox3,
+     .Chk4 .custom-checkbox4,
+     .Chk5 .custom-checkbox5,
+     .Chk6 .custom-checkbox6 {
        margin-left: 2em;
        position: relative;
        cursor: pointer;
      }
 
-     .Chk1 .custom-checkbox1 .bi {
+     .Chk1 .custom-checkbox1 .bi,
+     .Chk2 .custom-checkbox2 .bi,
+     .Chk3 .custom-checkbox3 .bi,
+     .Chk4 .custom-checkbox4 .bi,
+     .Chk5 .custom-checkbox5 .bi,
+     .Chk6 .custom-checkbox6 .bi {
        color: gold;
        position: absolute;
        top: 0.4em;
@@ -45,109 +63,43 @@
        font-size: 0.75em;
      }
 
-     .Chk1 .custom-checkbox1 .bi-bookmark-heart {
+     .Chk1 .custom-checkbox1 .bi-bookmark-heart,
+     .Chk2 .custom-checkbox2 .bi-bookmark-heart,
+     .Chk3 .custom-checkbox3 .bi-bookmark-heart,
+     .Chk4 .custom-checkbox4 .bi-bookmark-heart,
+     .Chk5 .custom-checkbox5 .bi-bookmark-heart,
+     .Chk6 .custom-checkbox6 .bi-bookmark-heart {
        color: gray;
      }
 
-     .Chk1 .custom-checkbox1 .bi-bookmark-heart-fill {
+     .Chk1 .custom-checkbox1 .bi-bookmark-heart-fill,
+     .Chk2 .custom-checkbox2 .bi-bookmark-heart-fill,
+     .Chk3 .custom-checkbox3 .bi-bookmark-heart-fill,
+     .Chk4 .custom-checkbox4 .bi-bookmark-heart-fill,
+     .Chk5 .custom-checkbox5 .bi-bookmark-heart-fill,
+     .Chk6 .custom-checkbox6 .bi-bookmark-heart-fill {
        opacity: 0;
        transition: opacity 0.2s ease-in-out;
      }
 
-     .Chk1 .custom-checkbox1:hover .bi-bookmark-heart-fill{
+     .Chk1 .custom-checkbox1:hover .bi-bookmark-heart-fill, 
+     .Chk2 .custom-checkbox2:hover .bi-bookmark-heart-fill,
+     .Chk3 .custom-checkbox3:hover .bi-bookmark-heart-fill,
+     .Chk4 .custom-checkbox4:hover .bi-bookmark-heart-fill,
+     .Chk5 .custom-checkbox5:hover .bi-bookmark-heart-fill,
+     .Chk6 .custom-checkbox6:hover .bi-bookmark-heart-fill {
        opacity: 0.5;
      }
 
-     .Chk1 .custom-checkbox1 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
+     .Chk1 .custom-checkbox1 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk2 .custom-checkbox2 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk3 .custom-checkbox3 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk4 .custom-checkbox4 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk5 .custom-checkbox5 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk6 .custom-checkbox6 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
        opacity: 1;
      }
 
-
-     /* champorado fav */
-     .Chk2 .FavLabel {
-       /* Presentation */
-       font-size: 25px
-     }
-
-     /* Required Styling */
-
-     .Chk2 .FavLabel input[type="checkbox"] {
-       display: none;
-     }
-
-     .Chk2 .custom-checkbox2 {
-       margin-left: 2em;
-       position: relative;
-       cursor: pointer;
-     }
-
-     .Chk2 .custom-checkbox2 .bi {
-       color: gold;
-       position: absolute;
-       top: 0.4em;
-       left: -1.25em;
-       font-size: 0.75em;
-     }
-
-     .Chk2 .custom-checkbox2 .bi-bookmark-heart {
-       color: gray;
-     }
-
-     .Chk2 .custom-checkbox2 .bi-bookmark-heart-fill {
-       opacity: 0;
-       transition: opacity 0.2s ease-in-out;
-     }
-
-     .Chk2 .custom-checkbox2:hover .bi-bookmark-heart-fill{
-       opacity: 0.5;
-     }
-
-     .Chk2 .custom-checkbox2 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
-       opacity: 1;
-     }
-
-      /* silog fav */
-      .Chk3 .FavLabel {
-       /* Presentation */
-       font-size: 25px
-     }
-
-     /* Required Styling */
-
-     .Chk3 .FavLabel input[type="checkbox"] {
-       display: none;
-     }
-
-     .Chk3 .custom-checkbox3 {
-       margin-left: 2em;
-       position: relative;
-       cursor: pointer;
-     }
-
-     .Chk3 .custom-checkbox3 .bi {
-       color: gold;
-       position: absolute;
-       top: 0.4em;
-       left: -1.25em;
-       font-size: 0.75em;
-     }
-
-     .Chk3 .custom-checkbox3 .bi-bookmark-heart {
-       color: gray;
-     }
-
-     .Chk3 .custom-checkbox3 .bi-bookmark-heart-fill {
-       opacity: 0;
-       transition: opacity 0.2s ease-in-out;
-     }
-
-     .Chk3 .custom-checkbox3:hover .bi-bookmark-heart-fill{
-       opacity: 0.5;
-     }
-
-     .Chk3 .custom-checkbox3 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
-       opacity: 1;
-     }
    </style>
 </head>
   <body>
@@ -201,7 +153,6 @@
                 <input type="text" class="form-control rounded-end-pill srchbar" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
               </div>
             </form>
-       
 
             <div class="d-flex bg-body-tertiary btn-group LR-button" role="group" aria-label="login buttons">
               <button type="button" class="btn btn-secondary pt-3 l-btn" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
@@ -217,12 +168,18 @@
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Vegetarian</li>
+          <li class="breadcrumb-item active" aria-current="page">Vegetable</li>
         </ol>
       </nav>
-      <p class="text-uppercase fs-2 fw-light">Vegetarian Recipes</p>
+      <div class="row">
+        <div class="col">
+          <p class="text-uppercase fs-2 fw-light">Vegetable Recipes</p>
+        </div>
+
+      </div>
+      
       <div class="container">
-        <div class="row">
+        <div class="row">         
           <div class="col-lg-4 mt-4">
             <div class="card">
               <img src="tofu.jpg" class="card-img-top" alt="ArrozCaldo">
@@ -265,11 +222,13 @@
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
 
- <!------------------------------- Tofu Vegetable Stir Fry modal ------------------------------->
+<!------------------------------- Tofu Vegetable Stir Fry modal ------------------------------->
 <div class="modal fade" id="tofuModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
@@ -642,6 +601,37 @@
   </div>
 </div>
 
+   <!------------------------------- about us modal ------------------------------->
+   <div class="modal fade" id="AboutUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
+          <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body" id="about">
+  
+            <h1 class="pb-2">About Us</h1>
+            <p>Welcome to KitchenKonnect, your ultimate destination for discovering and sharing delicious recipes from around the world. 
+              We are passionate about bringing food enthusiasts together and helping them explore the joys of cooking and sharing meals.     
+              At KitchenKonnect, we believe that cooking is a creative and joyful experience that connects people across cultures. 
+              Our platform is designed to empower home cooks, food bloggers, and professional chefs alike to showcase their culinary talents, 
+              share their favorite recipes, and inspire others in the kitchen. Whether you're a seasoned cook or just starting your culinary journey, 
+              KitchenKonnect is here to provide a wide range of recipes, cooking tips, meal plans, and a vibrant community that supports and encourages your love for food.</p>
+              Join our community today and embark on a delicious adventure!</p>
+  
+        </div>
+          
+  
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
  <!------------------------------- Footer ------------------------------->
   <div class="container-fluid mt-5 pt-5">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -715,36 +705,6 @@
       </div>
     </div>
   </div>
-
-     <!------------------------------- about us modal ------------------------------->
- <div class="modal fade" id="AboutUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-body" id="about">
-
-          <h1 class="pb-2">About Us</h1>
-          <p>Welcome to KitchenKonnect, your ultimate destination for discovering and sharing delicious recipes from around the world. 
-            We are passionate about bringing food enthusiasts together and helping them explore the joys of cooking and sharing meals.     
-            At KitchenKonnect, we believe that cooking is a creative and joyful experience that connects people across cultures. 
-            Our platform is designed to empower home cooks, food bloggers, and professional chefs alike to showcase their culinary talents, 
-            share their favorite recipes, and inspire others in the kitchen. Whether you're a seasoned cook or just starting your culinary journey, 
-            KitchenKonnect is here to provide a wide range of recipes, cooking tips, meal plans, and a vibrant community that supports and encourages your love for food.</p>
-            Join our community today and embark on a delicious adventure!</p>
-
-      </div>
-        
-
-      <div class="modal-footer">
-        
-      </div>
-    </div>
-  </div>
-</div>
 
   <!------------------------------- Scripts ------------------------------->
   <script>

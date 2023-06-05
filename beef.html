@@ -17,26 +17,45 @@
     <link rel="icon" type="image/x-icon" href="kk3_lMv_icon.ico">
 
     <style>
-
       /* arroz caldo fav button     */
-     .Chk1 .FavLabel {
+     .Chk1 .FavLabel,
+     .Chk2 .FavLabel, 
+     .Chk3 .FavLabel, 
+     .Chk4 .FavLabel, 
+     .Chk5 .FavLabel, 
+     .Chk6 .FavLabel {
        /* Presentation */
        font-size: 25px
      }
 
      /* Required Styling */
 
-     .Chk1 .FavLabel input[type="checkbox"] {
+     .Chk1 .FavLabel input[type="checkbox"],
+     .Chk2 .FavLabel input[type="checkbox"],
+     .Chk3 .FavLabel input[type="checkbox"],
+     .Chk4 .FavLabel input[type="checkbox"],
+     .Chk5 .FavLabel input[type="checkbox"],
+     .Chk6 .FavLabel input[type="checkbox"] {
        display: none;
      }
 
-     .Chk1 .custom-checkbox1 {
+     .Chk1 .custom-checkbox1,
+     .Chk2 .custom-checkbox2,
+     .Chk3 .custom-checkbox3,
+     .Chk4 .custom-checkbox4,
+     .Chk5 .custom-checkbox5,
+     .Chk6 .custom-checkbox6 {
        margin-left: 2em;
        position: relative;
        cursor: pointer;
      }
 
-     .Chk1 .custom-checkbox1 .bi {
+     .Chk1 .custom-checkbox1 .bi,
+     .Chk2 .custom-checkbox2 .bi,
+     .Chk3 .custom-checkbox3 .bi,
+     .Chk4 .custom-checkbox4 .bi,
+     .Chk5 .custom-checkbox5 .bi,
+     .Chk6 .custom-checkbox6 .bi {
        color: gold;
        position: absolute;
        top: 0.4em;
@@ -44,109 +63,43 @@
        font-size: 0.75em;
      }
 
-     .Chk1 .custom-checkbox1 .bi-bookmark-heart {
+     .Chk1 .custom-checkbox1 .bi-bookmark-heart,
+     .Chk2 .custom-checkbox2 .bi-bookmark-heart,
+     .Chk3 .custom-checkbox3 .bi-bookmark-heart,
+     .Chk4 .custom-checkbox4 .bi-bookmark-heart,
+     .Chk5 .custom-checkbox5 .bi-bookmark-heart,
+     .Chk6 .custom-checkbox6 .bi-bookmark-heart {
        color: gray;
      }
 
-     .Chk1 .custom-checkbox1 .bi-bookmark-heart-fill {
+     .Chk1 .custom-checkbox1 .bi-bookmark-heart-fill,
+     .Chk2 .custom-checkbox2 .bi-bookmark-heart-fill,
+     .Chk3 .custom-checkbox3 .bi-bookmark-heart-fill,
+     .Chk4 .custom-checkbox4 .bi-bookmark-heart-fill,
+     .Chk5 .custom-checkbox5 .bi-bookmark-heart-fill,
+     .Chk6 .custom-checkbox6 .bi-bookmark-heart-fill {
        opacity: 0;
        transition: opacity 0.2s ease-in-out;
      }
 
-     .Chk1 .custom-checkbox1:hover .bi-bookmark-heart-fill{
+     .Chk1 .custom-checkbox1:hover .bi-bookmark-heart-fill, 
+     .Chk2 .custom-checkbox2:hover .bi-bookmark-heart-fill,
+     .Chk3 .custom-checkbox3:hover .bi-bookmark-heart-fill,
+     .Chk4 .custom-checkbox4:hover .bi-bookmark-heart-fill,
+     .Chk5 .custom-checkbox5:hover .bi-bookmark-heart-fill,
+     .Chk6 .custom-checkbox6:hover .bi-bookmark-heart-fill {
        opacity: 0.5;
      }
 
-     .Chk1 .custom-checkbox1 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
+     .Chk1 .custom-checkbox1 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk2 .custom-checkbox2 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk3 .custom-checkbox3 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk4 .custom-checkbox4 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk5 .custom-checkbox5 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
+     .Chk6 .custom-checkbox6 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
        opacity: 1;
      }
 
-
-     /* champorado fav */
-     .Chk2 .FavLabel {
-       /* Presentation */
-       font-size: 25px
-     }
-
-     /* Required Styling */
-
-     .Chk2 .FavLabel input[type="checkbox"] {
-       display: none;
-     }
-
-     .Chk2 .custom-checkbox2 {
-       margin-left: 2em;
-       position: relative;
-       cursor: pointer;
-     }
-
-     .Chk2 .custom-checkbox2 .bi {
-       color: gold;
-       position: absolute;
-       top: 0.4em;
-       left: -1.25em;
-       font-size: 0.75em;
-     }
-
-     .Chk2 .custom-checkbox2 .bi-bookmark-heart {
-       color: gray;
-     }
-
-     .Chk2 .custom-checkbox2 .bi-bookmark-heart-fill {
-       opacity: 0;
-       transition: opacity 0.2s ease-in-out;
-     }
-
-     .Chk2 .custom-checkbox2:hover .bi-bookmark-heart-fill{
-       opacity: 0.5;
-     }
-
-     .Chk2 .custom-checkbox2 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
-       opacity: 1;
-     }
-
-      /* silog fav */
-      .Chk3 .FavLabel {
-       /* Presentation */
-       font-size: 25px
-     }
-
-     /* Required Styling */
-
-     .Chk3 .FavLabel input[type="checkbox"] {
-       display: none;
-     }
-
-     .Chk3 .custom-checkbox3 {
-       margin-left: 2em;
-       position: relative;
-       cursor: pointer;
-     }
-
-     .Chk3 .custom-checkbox3 .bi {
-       color: gold;
-       position: absolute;
-       top: 0.4em;
-       left: -1.25em;
-       font-size: 0.75em;
-     }
-
-     .Chk3 .custom-checkbox3 .bi-bookmark-heart {
-       color: gray;
-     }
-
-     .Chk3 .custom-checkbox3 .bi-bookmark-heart-fill {
-       opacity: 0;
-       transition: opacity 0.2s ease-in-out;
-     }
-
-     .Chk3 .custom-checkbox3:hover .bi-bookmark-heart-fill{
-       opacity: 0.5;
-     }
-
-     .Chk3 .custom-checkbox3 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
-       opacity: 1;
-     }
    </style>
 </head>
   <body>
@@ -200,7 +153,6 @@
                 <input type="text" class="form-control rounded-end-pill srchbar" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
               </div>
             </form>
-       
 
             <div class="d-flex bg-body-tertiary btn-group LR-button" role="group" aria-label="login buttons">
               <button type="button" class="btn btn-secondary pt-3 l-btn" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
@@ -216,12 +168,18 @@
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Soups & Stews</li>
+          <li class="breadcrumb-item active" aria-current="page">Beef</li>
         </ol>
       </nav>
-      <p class="text-uppercase fs-2 fw-light">Soup & Stew Recipes</p>
+      <div class="row">
+        <div class="col">
+          <p class="text-uppercase fs-2 fw-light">Beef Recipes</p>
+        </div>
+
+      </div>
+      
       <div class="container">
-        <div class="row">
+        <div class="row">         
           <div class="col-lg-4 mt-4">
             <div class="card">
               <img src="karekare.jpg" class="card-img-top" alt="ArrozCaldo">
@@ -236,40 +194,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4  mt-4">
-            <div class="card">
-              <img src="TinolangManok.jpg" class="card-img-top" alt="ArrozCaldo">
-              <div class="card-body">
-                <h5 class="card-title">Tinolang Manok sa Gata</h5>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#TinolangManokModal">View Recipe</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4  mt-4">
-            <div class="card">
-              <img src="SINIGANG.jpg" class="card-img-top" alt="ArrozCaldo">
-              <div class="card-body">
-                <h5 class="card-title">Sinigang na Bangus sa Bayabas</h5>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#SinigangModal">View Recipe</a>
-              </div>
-            </div>
-          </div>
+
+
+
         </div>
       </div>
     </div>
 
  <!------------------------------- karekare modal ------------------------------->
-<div class="modal fade" id="karekareModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal fade" id="karekareModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
@@ -386,251 +319,6 @@
             </div>
             <br>
             <button type="submit" class="form-control btn btn-secondary">Submit</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        
-      </div>
-    </div>
-  </div>
-</div>
-    
-<!------------------------------- tinolang manok modal ------------------------------->
-<div class="modal fade" id="TinolangManokModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Tinolang Manok sa Gata</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-body" id="ingredient">
-        <img src="TinolangManok.jpg" alt="" id="BFimg" class="mb-3">
-        <div class="row">
-          <div class="col pt-1">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <div class="col d-flex justify-content-end Chk2">
-            <!-- <label for="id-of-input2" class="custom-checkbox2 FavLabel pt-0 mt-0">
-              <input type="checkbox" id="id-of-input2"/>
-              <i class="bi bi-bookmark-heart "></i>
-              <i class="bi bi-bookmark-heart-fill "></i>
-              <span>Favorite</span>
-            </label> -->
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="container-">
-          <h3 class="fw-bold">Tinolang Manok sa Gata</h3>
-          <p class="fst-italic">This is a recipe for Tinolang Manok sa Gata</p>
-          <label class="fw-bold">Recipe by: </label>
-          <label>Lorem Ipsum</label>
-          <br>
-              <ul>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 10 minutes</li>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 1 hour</li>
-                <li><label class="fw-bold">Total:</label> 1 hour 10 minutes</li>
-              </ul>
-          <hr>
-        </div>
-        
-        <p class="fs-4">Ingredients</p>
-          <form>
-            <ul>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola1" class="form-check-input chkbox"> <label for="tinola1" class="fst-normal text-black">2 lbs. chicken</label> (cut into serving pieces)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola2" class="form-check-input chkbox">  <label for="tinola2" class="fst-normal text-black">1 cup malunggay</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola3" class="form-check-input chkbox">  <label for="tinola3" class="fst-normal text-black">2 cups coconut milk</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola4" class="form-check-input chkbox">  <label for="tinola4" class="fst-normal text-black">1 small unripe papaya</label> (sliced into wedges)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola5" class="form-check-input chkbox">  <label for="tinola5" class="fst-normal text-black">1 medium yellow onion</label> (sliced)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola6" class="form-check-input chkbox">  <label for="tinola6" class="fst-normal text-black">3 thumbs ginger</label> (julienne)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola7" class="form-check-input chkbox">  <label for="tinola7" class="fst-normal text-black">4 cloves garlic</label> (crushed)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola8" class="form-check-input chkbox">  <label for="tinola8" class="fst-normal text-black">3 pieces Thai or birds eye chili</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola9" class="form-check-input chkbox">  <label for="tinola9" class="fst-normal text-black">1 Knorr chicken cube</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola10" class="form-check-input chkbox">  <label for="tinola10" class="fst-normal text-black">2 cups water</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola11" class="form-check-input chkbox">  <label for="tinola11" class="fst-normal text-black">½ teaspoon ground black pepper</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola12" class="form-check-input chkbox">  <label for="tinola12" class="fst-normal text-black">2 tablespoons fish sauce</label> (patis)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="tinola13" class="form-check-input chkbox">  <label for="tinola13" class="fst-normal text-black">3 tablespoons cooking oil</label></li>
-            </ul>
-        </form>
-        <hr>
-        <p class="fs-4 mt-0">Instructions</p>
-        <ol type="1">
-          <li>Heat oil in a cooking pot.</li>
-          <li>Saute garlic, onion, and ginger. Continue to cook for 3 minutes or until the onion starts to get soft.</li>
-          <li>Add the chicken. Stir fry until it turns light brown.</li>
-          <li>Pour the coconut milk into the pot. Let boil.</li>
-          <li>Add ground black pepper and chili pepper. Cover and cook in low heat for 35 minutes or until the chicken gets tender.</li>
-          <li>Add papaya. Cover and cook for 7 minutes.</li>
-          <li>Pour water into the pot. Let it boil.</li>
-          <li>Add the chicken cube. Stir. Cover and cook for 5 to 8 minutes.</li>
-          <li>Add the malunggay and fish sauce (patis). Stir and cook for 3 minutes.</li>
-          <li>Transfer to a serving bowl.</li>
-          <li>Serve. Share and enjoy!</li>
-        </ol>
-
-        <hr>
-        <div class="container bg-body-secondary">
-          <p class="fs-3 mb-0">Leave a Comment</p>
-          <p class="fs-6 mt-0">Have a question? Submit your question or comment below.</p>
-          
-          <!-- star rating -->
-          <form class="needs-validation" novalidate>
-            <div class="rating-box mb-0">
-              <div class="stars pb-0 bg-body-secondary">
-                <p class="fs-5 pb-0">Recipe Rating: </p>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>    
-              <hr>
-            </div>
-            
-            <!-- comment section -->
-            <div class="form-floating">
-              <textarea name="comments" id="comments" placeholder="Name" cols="30" rows="5" class="w-100 form-control" style="height: 100%;"></textarea>
-              <label for="comments">Comment</label>
-            </div>
-
-            <div class="form-floating">
-              <input type="text" class="mt-1 w-100 form-control" placeholder="Name" id="name">
-              <label for="name">Name</label>
-            </div>
-    
-            <div class="form-floating">
-              <input type="email" class="mt-1 w-100 form-control" placeholder="email" id="email">
-              <label for="email">Email</label>
-            </div>
-            <br>
-            <button type="submit" class="form-control btn btn-secondary">Submit</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        
-      </div>
-    </div>
-  </div>
-</div>
-
- <!------------------------------- sinigang modal ------------------------------->
- <div class="modal fade" id="SinigangModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Sinigang na Bangus sa Bayabas</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-body" id="ingredient">
-        <img src="SINIGANG.jpg" alt="" id="BFimg" class="mb-3">
-        <div class="row">
-          <div class="col pt-1">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <div class="col d-flex justify-content-end Chk3">
-            <!-- <label for="id-of-input3" class="custom-checkbox3 FavLabel pt-0 mt-0">
-              <input type="checkbox" id="id-of-input3"/>
-              <i class="bi bi-bookmark-heart "></i>
-              <i class="bi bi-bookmark-heart-fill "></i>
-              <span>Favorite</span>
-            </label> -->
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="container-">
-          <h3 class="fw-bold">Sinigang na Bangus sa Bayabas</h3>
-          <p class="fst-italic">Sinigang na Bangus sa Bayabas is a version of sinigang that makes use of ripe guava as the souring agent.</p>
-          <label class="fw-bold">Recipe by: </label>
-          <label>Lorem Ipsum</label>
-          <br>
-              <ul>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 15 minutes</li>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 40 minutes</li>
-                <li><label class="fw-bold">Total:</label> 55 minutes</li>
-              </ul>
-          <hr>
-        </div>
-        
-        <p class="fs-4">Ingredients</p>
-          <form>
-            <ul>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang1" class="form-check-input chkbox"> <label for="sinigang1" class="fst-normal text-black">1 medium milkfish</label> (bangus, cleaned and scales removed)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang2" class="form-check-input chkbox">  <label for="sinigang2" class="fst-normal text-black">2 cups baby spinach</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang3" class="form-check-input chkbox">  <label for="sinigang3" class="fst-normal text-black">4 to 6 pieces guava</label> (ripe)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang4" class="form-check-input chkbox">  <label for="sinigang4" class="fst-normal text-black">8 pieces okra</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang5" class="form-check-input chkbox">  <label for="sinigang5" class="fst-normal text-black">1 small onion</label> (wedged)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang6" class="form-check-input chkbox">  <label for="sinigang6" class="fst-normal text-black">2 medium tomato</label> (wedged)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang7" class="form-check-input chkbox">  <label for="sinigang7" class="fst-normal text-black">2 pieces Jalapeno pepper</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang8" class="form-check-input chkbox">  <label for="sinigang8" class="fst-normal text-black">2 tablespoons fish sauce</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang9" class="form-check-input chkbox">  <label for="sinigang9" class="fst-normal text-black">1 teaspoon ground black pepper</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="sinigang10" class="form-check-input chkbox">  <label for="sinigang10" class="fst-normal text-black">4 to 5 cups water</label></li>
-            </ul>
-        </form>
-        <hr>
-        <p class="fs-4 mt-0">Instructions</p>
-        <ol type="1">
-          <li>Pour the water in a cooking pot. Bring to a boil.</li>
-          <li>Put-in the guava, tomato, onion, and whole peppercorn. Let it boil. Continue to boil (covered) for 15 minutes or until the guava and vegetables are soft. You may add more water if needed.</li>
-          <li>Using a fork of potato masher, mash the guava and vegetables inside the cooking pot to extract the flavors. This is an optional step, be extra careful.</li>
-          <li>Pour-in the fish sauce. Stir.</li>
-          <li>Add the milk fish. Cook for 5 to 10 minutes in medium heat.</li>
-          <li>Add the okra and Jalapeno. Continue to cook for 5 minutes.</li>
-          <li>Put-in the spinach. Cover the cooking pot. Turn the heat off. Let the spinach stay in the pot for 5 minutes.</li>
-          <li>Transfer to a serving bowl. Serve.</li>
-          <li>Share and enjoy!</li>
-        </ol>
-
-        <hr>
-        <div class="container bg-body-secondary">
-          <p class="fs-3 mb-0">Leave a Comment</p>
-          <p class="fs-6 mt-0">Have a question? Submit your question or comment below.</p>
-          
-          <!-- star rating -->
-          <form class="needs-validation" novalidate>
-            <div class="rating-box mb-0">
-              <div class="stars pb-0 bg-body-secondary">
-                <p class="fs-5 pb-0">Recipe Rating: </p>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>    
-              <hr>
-            </div>
-            
-            <!-- comment section -->
-            <div class="form-floating">
-              <textarea name="comments" id="comments" placeholder="Name" cols="30" rows="5" class="w-100 form-control" style="height: 100%;"></textarea>
-              <label for="comments">Comment</label>
-            </div>
-
-            <div class="form-floating">
-              <input type="text" class="mt-1 w-100 form-control" placeholder="Name" id="name">
-              <label for="name">Name</label>
-            </div>
-    
-            <div class="form-floating">
-              <input type="email" class="mt-1 w-100 form-control" placeholder="email" id="email">
-              <label for="email">Email</label>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-secondary form-control">Submit</button>
           </form>
         </div>
       </div>

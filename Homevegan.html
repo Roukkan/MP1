@@ -182,11 +182,11 @@
                   Ingredients
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Chicken</a></li>
-                  <li><a class="dropdown-item" href="#">Pork</a></li>
-                  <li><a class="dropdown-item" href="#">Beef</a></li>
-                  <li><a class="dropdown-item" href="#">Fish</a></li>
-                  <li><a class="dropdown-item" href="#">Vegetable</a></li>
+                  <li><a class="dropdown-item" href="Homechicken.html">Chicken</a></li>
+                  <li><a class="dropdown-item" href="Homepork.html">Pork</a></li>
+                  <li><a class="dropdown-item" href="Homebeef.html">Beef</a></li>
+                  <li><a class="dropdown-item" href="Homefish.html">Fish</a></li>
+                  <li><a class="dropdown-item" href="HomeVegetable.html">Vegetable</a></li>
                 </ul>
               </li>
 
@@ -195,7 +195,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#AboutUsModal">About Us</a>
               </li>
 
             </ul>
@@ -651,12 +651,42 @@
   </div>
 </div>
 
+   <!------------------------------- about us modal ------------------------------->
+   <div class="modal fade" id="AboutUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
+          <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body" id="about">
+  
+            <h1 class="pb-2">About Us</h1>
+            <p>Welcome to KitchenKonnect, your ultimate destination for discovering and sharing delicious recipes from around the world. 
+              We are passionate about bringing food enthusiasts together and helping them explore the joys of cooking and sharing meals.     
+              At KitchenKonnect, we believe that cooking is a creative and joyful experience that connects people across cultures. 
+              Our platform is designed to empower home cooks, food bloggers, and professional chefs alike to showcase their culinary talents, 
+              share their favorite recipes, and inspire others in the kitchen. Whether you're a seasoned cook or just starting your culinary journey, 
+              KitchenKonnect is here to provide a wide range of recipes, cooking tips, meal plans, and a vibrant community that supports and encourages your love for food.</p>
+              Join our community today and embark on a delicious adventure!</p>
+  
+        </div>
+          
+  
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
  <!------------------------------- Footer ------------------------------->
   <div class="container-fluid mt-5 pt-5">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 KitchenKonnect.</p>
   
-      <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <a href="home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="KK3.png" alt="Bootstrap" width="60" height="60">
       </a>
   

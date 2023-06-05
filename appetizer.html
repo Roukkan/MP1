@@ -181,16 +181,16 @@
                   Ingredients
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Chicken</a></li>
-                  <li><a class="dropdown-item" href="#">Pork</a></li>
-                  <li><a class="dropdown-item" href="#">Beef</a></li>
-                  <li><a class="dropdown-item" href="#">Fish</a></li>
-                  <li><a class="dropdown-item" href="#">Vegetable</a></li>
+                  <li><a class="dropdown-item" href="chicken.html">Chicken</a></li>
+                  <li><a class="dropdown-item" href="pork.html">Pork</a></li>
+                  <li><a class="dropdown-item" href="beef.html">Beef</a></li>
+                  <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+                  <li><a class="dropdown-item" href="Vegetable.html">Vegetable</a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#AboutUsModal">About Us</a>
               </li>
 
             </ul>
@@ -203,7 +203,7 @@
        
 
             <div class="d-flex bg-body-tertiary btn-group LR-button" role="group" aria-label="login buttons">
-              <button type="button" class="btn btn-secondary pt-3 l-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button type="button" class="btn btn-secondary pt-3 l-btn" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
               <button type="button" class="btn btn-secondary pt-3 r-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
             </div>
             
@@ -687,6 +687,65 @@
     </footer>
   </div>
   
+  <!-------------------------------Login Modal -------------------------------->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="LoginForm" action="home.html" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback">Please enter email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+              <div class="invalid-feedback">Please enter password.</div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-------------------------------Register Modal -------------------------------->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm" action="home.html" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Please enter full name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Please enter an email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+              <div class="invalid-feedback">Please enter password.</div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!------------------------------- Scripts ------------------------------->
   <script>
   // ------------------------------- star transition script -------------------------------
@@ -697,7 +756,21 @@
           index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
         })
       })
-    })
+    });
+
+    (function () {
+      'use strict';
+      var forms = document.querySelectorAll('.needs-validation');
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
   </script>
   </body>
 </html>
