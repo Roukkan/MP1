@@ -11,100 +11,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
     <title>KitchenKonnect</title>
 
     <link rel="icon" type="image/x-icon" href="kk3_lMv_icon.ico">
-
-    <style>
-      /* arroz caldo fav button     */
-     .Chk1 .FavLabel,
-     .Chk2 .FavLabel, 
-     .Chk3 .FavLabel, 
-     .Chk4 .FavLabel, 
-     .Chk5 .FavLabel, 
-     .Chk6 .FavLabel {
-       /* Presentation */
-       font-size: 25px
-     }
-
-     /* Required Styling */
-
-     .Chk1 .FavLabel input[type="checkbox"],
-     .Chk2 .FavLabel input[type="checkbox"],
-     .Chk3 .FavLabel input[type="checkbox"],
-     .Chk4 .FavLabel input[type="checkbox"],
-     .Chk5 .FavLabel input[type="checkbox"],
-     .Chk6 .FavLabel input[type="checkbox"] {
-       display: none;
-     }
-
-     .Chk1 .custom-checkbox1,
-     .Chk2 .custom-checkbox2,
-     .Chk3 .custom-checkbox3,
-     .Chk4 .custom-checkbox4,
-     .Chk5 .custom-checkbox5,
-     .Chk6 .custom-checkbox6 {
-       margin-left: 2em;
-       position: relative;
-       cursor: pointer;
-     }
-
-     .Chk1 .custom-checkbox1 .bi,
-     .Chk2 .custom-checkbox2 .bi,
-     .Chk3 .custom-checkbox3 .bi,
-     .Chk4 .custom-checkbox4 .bi,
-     .Chk5 .custom-checkbox5 .bi,
-     .Chk6 .custom-checkbox6 .bi {
-       color: gold;
-       position: absolute;
-       top: 0.4em;
-       left: -1.25em;
-       font-size: 0.75em;
-     }
-
-     .Chk1 .custom-checkbox1 .bi-bookmark-heart,
-     .Chk2 .custom-checkbox2 .bi-bookmark-heart,
-     .Chk3 .custom-checkbox3 .bi-bookmark-heart,
-     .Chk4 .custom-checkbox4 .bi-bookmark-heart,
-     .Chk5 .custom-checkbox5 .bi-bookmark-heart,
-     .Chk6 .custom-checkbox6 .bi-bookmark-heart {
-       color: gray;
-     }
-
-     .Chk1 .custom-checkbox1 .bi-bookmark-heart-fill,
-     .Chk2 .custom-checkbox2 .bi-bookmark-heart-fill,
-     .Chk3 .custom-checkbox3 .bi-bookmark-heart-fill,
-     .Chk4 .custom-checkbox4 .bi-bookmark-heart-fill,
-     .Chk5 .custom-checkbox5 .bi-bookmark-heart-fill,
-     .Chk6 .custom-checkbox6 .bi-bookmark-heart-fill {
-       opacity: 0;
-       transition: opacity 0.2s ease-in-out;
-     }
-
-     .Chk1 .custom-checkbox1:hover .bi-bookmark-heart-fill, 
-     .Chk2 .custom-checkbox2:hover .bi-bookmark-heart-fill,
-     .Chk3 .custom-checkbox3:hover .bi-bookmark-heart-fill,
-     .Chk4 .custom-checkbox4:hover .bi-bookmark-heart-fill,
-     .Chk5 .custom-checkbox5:hover .bi-bookmark-heart-fill,
-     .Chk6 .custom-checkbox6:hover .bi-bookmark-heart-fill {
-       opacity: 0.5;
-     }
-
-     .Chk1 .custom-checkbox1 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
-     .Chk2 .custom-checkbox2 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
-     .Chk3 .custom-checkbox3 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
-     .Chk4 .custom-checkbox4 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
-     .Chk5 .custom-checkbox5 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill,
-     .Chk6 .custom-checkbox6 input[type="checkbox"]:checked ~ .bi-bookmark-heart-fill {
-       opacity: 1;
-     }
-
-   </style>
 </head>
+
   <body>
     <!------------------------------- navbar ------------------------------->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-4">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary pt-4">
       
       <div class="container-fluid">
           <a class="navbar-brand" href="home.html">
@@ -157,7 +73,7 @@
                 <input type="text" class="form-control rounded-end-pill srchbar" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
               </div>
             </form>
-
+       
             <div class="btn-group">
               <button class="btn btn-light btn dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="bi bi-person-circle" id="basic-addon1"></span>
@@ -169,172 +85,117 @@
                 <li><a class="dropdown-item" href="index.html">Logout</a></li>
               </ul>
             </div>
-            
         </div>
       </div>
     </nav>
-    
-    <!------------------------------- Recipe body ------------------------------->
-    <div class="container-fluid">
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-secondary">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Beef</li>
-        </ol>
-      </nav>
-      <div class="row">
-        <div class="col">
-          <p class="text-uppercase fs-2 fw-light">Beef Recipes</p>
-        </div>
 
+   <div class="container">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-secondary">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col">       
       </div>
-      
-      <div class="container">
-        <div class="row">         
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img src="karekare.jpg" class="card-img-top" alt="ArrozCaldo">
-              <div class="card-body">
-                <h5 class="card-title">Kare Kare</h5>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <a href="#" id="view" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#karekareModal">View Recipe</a>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
+      <div class="col d-flex justify-content-end h-75">
+        <button class="form-control rounded-pill addBtn pt-1 pb-1" style="width:fit-content;" data-bs-toggle="modal" data-bs-target="#AddRecipe">+ Add Recipe</button>
       </div>
     </div>
 
- <!------------------------------- karekare modal ------------------------------->
- <div class="modal fade" id="karekareModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-2">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="profile.jpg" alt="avatar"
+          style="width: 150px;" />
+      </div>
+
+      <div class="col-lg-4 d-none d-lg-block">
+        <h5>Stash Kobayashi</h5>
+        <label for="">0</label><label class="text-secondary ps-2">Recipes posted</label>
+        <label class="ps-3">6</label><label class="text-secondary ps-2 pb-4">Favorite recipes</label>
+        <p>Email: kobayashistash@gmail.com</p>
+        <p>Location: Guiuan, Eastern Samar</p>
+        <p>Contact No.: 09903334571</p>
+        <button class="form-control rounded-pill addBtn pt-1 pb-1">Edit Profile</button>
+      </div>
+
+    </div>
+   </div>
+
+<!------------------------------- add Recipe modal -------------------------------->
+<div class="modal fade" id="AddRecipe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Kare Kare</h2>
+        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">Add Recipe</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      
-      <div class="modal-body" id="ingredient">
-        <img src="karekare.jpg" alt="" id="BFimg" class="mb-3">
-        <div class="row">
-          <div class="col pt-1">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <div class="col d-flex justify-content-end Chk1">
-            <label for="id-of-input1" class="custom-checkbox1 FavLabel pt-0 mt-0">
-              <input type="checkbox" id="id-of-input1" checked/>
-              <i class="bi bi-bookmark-heart "></i>
-              <i class="bi bi-bookmark-heart-fill "></i>
-              <span>Favorite</span>
-            </label>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="container-">
-          <h3 class="fw-bold">Kare Kare</h3>
-          <p class="fst-italic">This is a recipe for Kare-kare or ox tripe stew</p>
-          <label class="fw-bold">Recipe by: </label>
-          <label>Lorem Ipsum</label>
-          <br>
-              <ul>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Prep:</label> 10 minutes</li>
-                <li class="pe-3" style="float: left;"><label class="fw-bold">Cook:</label> 1 hour</li>
-                <li><label class="fw-bold">Total:</label> 1 hour 10 minutes</li>
-              </ul>
-          <hr>
-        </div>
-        
-        <p class="fs-4">Ingredients</p>
-          <form>
-            <ul>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare1" class="form-check-input chkbox">  <label for="kare1" class="fst-normal text-black">3 lbs oxtail</label> (cut in 2 inch slices you an also use tripe or beef slices)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare2" class="form-check-input chkbox">  <label for="kare2" class="fst-normal text-black">1 piece small banana flower bud</label> (sliced)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare3" class="form-check-input chkbox">  <label for="kare3" class="fst-normal text-black">1 bundle pechay or bok choy</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare4" class="form-check-input chkbox">  <label for="kare4" class="fst-normal text-black">1 bundle string beans</label> (cut into 2 inch slices)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare5" class="form-check-input chkbox">  <label for="kare5" class="fst-normal text-black">4 pieces eggplants</label> (sliced)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare6" class="form-check-input chkbox">  <label for="kare6" class="fst-normal text-black">1 cup ground peanuts</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare7" class="form-check-input chkbox">  <label for="kare7" class="fst-normal text-black">1/2 cup peanut butter</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare8" class="form-check-input chkbox">  <label for="kare8" class="fst-normal text-black">1/2 cup shrimp paste</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare9" class="form-check-input chkbox">  <label for="kare9" class="fst-normal text-black">34 Ounces water</label> (about 1 Liter)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare10" class="form-check-input chkbox">  <label for="kare10" class="fst-normal text-black">1/2 cup annatto seeds</label> (soaked in a cup of water)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare11" class="form-check-input chkbox">  <label for="kare11" class="fst-normal text-black">1/2 cup toasted ground rice</label></li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare12" class="form-check-input chkbox">  <label for="kare12" class="fst-normal text-black">1 tbsp garlic</label> (minced)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare13" class="form-check-input chkbox">  <label for="kare13" class="fst-normal text-black">1 piece onion</label> (chopped)</li>
-                <li class="fst-italic text-secondary"><input type="checkbox" value="" id="kare14" class="form-check-input chkbox">  <label for="kare14" class="fst-normal text-black">salt and pepper</label></li>
-            </ul>
-        </form>
-        <hr>
-        <p class="fs-4 mt-0">Instructions</p>
-        <ol type="1">
-          <li>In a large pot, bring the water to a boil</li>
-          <li>Put in the oxtail followed by the onions and simmer for 2.5 to 3 hrs or until tender (35 minutes if using a pressure cooker)</li>
-          <li>Once the meat is tender, add the ground peanuts, peanut butter, and coloring (water from the annatto seed mixture) and simmer for 5 to 7 minutes</li>
-          <li>Add the toasted ground rice and simmer for 5 minutes</li>
-          <li>On a separate pan, saute the garlic then add the banana flower, eggplant, and string beans and cook for 5 minutes</li>
-          <li>Transfer the cooked vegetables to the large pot (where the rest of the ingredients are)</li>
-          <li>Add salt and pepper to taste</li>
-          <li>Serve hot with shrimp paste. Enjoy!</li>
-          
-        </ol>
+      <div class="modal-body" id="AddRecipe">
 
-        <hr>
-        <div class="container bg-body-secondary">
-          <p class="fs-3 mb-0">Leave a Comment</p>
-          <p class="fs-6 mt-0">Have a question? Submit your question or comment below.</p>
-          
-          <!-- star rating -->
-          <form class="needs-validation" novalidate>
-            <div class="rating-box mb-0">
-              <div class="stars pb-0 bg-body-secondary">
-                <p class="fs-5 pb-0">Recipe Rating: </p>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>    
-              <hr>
+        <form class="row g-3 needs-validation" novalidate>          
+            <div class="form-floating">
+              <input type="text" class="mt-1 ps-3 w-100 form-control" placeholder="name" id="name" required>
+              <label for="name" class="ms-2">Recipe Name</label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter recipe name.</div>
             </div>
             
-            <!-- comment section -->
-          <form class="row g-3 needs-validation" novalidate>
-            <div class="form-floating">
-              <textarea name="comments" id="comments" placeholder="Name" cols="30" rows="5" class="w-100 form-control" style="height: 100%;" required></textarea>
-              <label for="comments">Comment</label>
-              <div class="invalid-tooltip">
-                Invalid!
-              </div>
-        
+            <div class="input-group mb-3">
+              <span class="input-group-text">Prep:</span>
+              <input type="text" class=" form-control" >
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter prep time.</div>
+              <span class="input-group-text">Cook:</span>
+              <input type="text" class=" form-control" >
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter cook time.</div>
+              <span class="input-group-text">Total:</span>
+              <input type="text" class="form-control" >
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter total time.</div>
             </div>
 
+            <p class="fs-6 mt-4 mb-0">Ingredients</p>
             <div class="form-floating">
-              <input type="text" class="mt-1 w-100 form-control" placeholder="Name" id="name">
-              <label for="name">Name</label>
+              <textarea type="text" class="form-control" cols="30" rows="2" placeholder="ingredient" id="ingredient" required></textarea>
+              <label for="ingredient" class="ms-2">Add 1 or paste multiple items.</label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter ingredients.</div>
             </div>
-    
             <div class="form-floating">
-              <input type="email" class="mt-1 w-100 form-control" placeholder="email" id="email">
-              <label for="email">Email</label>
+              <input type="text" class="form-control" placeholder="head" id="head" required>
+              <label for="head" class="ms-2">Ingredient Header</label>
             </div>
+
+            <p class="fs-6 mt-4 mb-0">Instructions</p>
+            <div class="form-floating">
+              <textarea type="text" class="form-control" placeholder="instruction" id="instruction" required></textarea>
+              <label for="instruction" class="ms-2">Add 1 or paste multiple items.</label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter cooking instructions.</div>
+            </div>
+            <div class="form-floating">
+              <input type="text" class="form-control" placeholder="head" id="head" required>
+              <label for="head" class="ms-2">Instruction Header</label>
+            </div>
+
+            <p class="fs-6 mt-4 mb-0">Recipe image</p>
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile02" required>
+              <label class="input-group-text" for="inputGroupFile02" >Upload</label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please enter recipe image.</div>
+            </div>
+                    
             <br>
             <button type="submit" class="form-control btn btn-secondary">Submit</button>
-          </form>
-        </div>
+        </form>
       </div>
+      
 
-      <div class="modal-footer">
+    <div class="modal-footer">
         
       </div>
     </div>
@@ -524,18 +385,9 @@
   </div>
 </div>
 </div>
-  
-  <!------------------------------- Scripts ------------------------------->
-  <script>
-  // ------------------------------- star transition script -------------------------------
-    const stars = document.querySelectorAll(".stars i");
-    stars.forEach((star, index1) =>{
-      star.addEventListener("click", () => {
-        stars.forEach((star, index2) => {
-          index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
-        })
-      })
-    })
-  </script>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
   </body>
 </html>

@@ -642,22 +642,6 @@
   </div>
 </div>
 
- <!------------------------------- Footer ------------------------------->
-  <div class="container-fluid mt-5 pt-5">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 KitchenKonnect.</p>
-  
-      <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="KK3.png" alt="Bootstrap" width="60" height="60">
-      </a>
-  
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Terms of Service</a></li>
-      </ul>
-    </footer>
-  </div>
-
 <!-------------------------------Login Modal -------------------------------->
   <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -716,35 +700,145 @@
       </div>
     </div>
   </div>
+  
+<!------------------------------- Footer ------------------------------->
+<div class="container-fluid mt-5 pt-5">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 KitchenKonnect.</p>
+
+    <a href="home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="KK3.png" alt="Bootstrap" width="60" height="60">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" data-bs-toggle="modal" data-bs-target="#ContactUsModal">Contact Us</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" data-bs-toggle="modal" data-bs-target="#TermsModal">Terms of Service</a></li>
+    </ul>
+  </footer>
+</div>
 
 <!------------------------------- about us modal ------------------------------->
- <div class="modal fade" id="AboutUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
-        <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+<div class="modal fade" id="AboutUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
+      <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    
+    <div class="modal-body" id="about">
+
+        <h1 class="pb-2">About Us</h1>
+        <p>Welcome to KitchenKonnect, your ultimate destination for discovering and sharing delicious recipes from around the world. 
+          We are passionate about bringing food enthusiasts together and helping them explore the joys of cooking and sharing meals.     
+          At KitchenKonnect, we believe that cooking is a creative and joyful experience that connects people across cultures. 
+          Our platform is designed to empower home cooks, food bloggers, and professional chefs alike to showcase their culinary talents, 
+          share their favorite recipes, and inspire others in the kitchen. Whether you're a seasoned cook or just starting your culinary journey, 
+          KitchenKonnect is here to provide a wide range of recipes, cooking tips, meal plans, and a vibrant community that supports and encourages your love for food.</p>
+          Join our community today and embark on a delicious adventure!</p>
+
+    </div>
       
-      <div class="modal-body" id="about">
 
-          <h1 class="pb-2">About Us</h1>
-          <p>Welcome to KitchenKonnect, your ultimate destination for discovering and sharing delicious recipes from around the world. 
-            We are passionate about bringing food enthusiasts together and helping them explore the joys of cooking and sharing meals.     
-            At KitchenKonnect, we believe that cooking is a creative and joyful experience that connects people across cultures. 
-            Our platform is designed to empower home cooks, food bloggers, and professional chefs alike to showcase their culinary talents, 
-            share their favorite recipes, and inspire others in the kitchen. Whether you're a seasoned cook or just starting your culinary journey, 
-            KitchenKonnect is here to provide a wide range of recipes, cooking tips, meal plans, and a vibrant community that supports and encourages your love for food.</p>
-            Join our community today and embark on a delicious adventure!</p>
-
-      </div>
-        
-
-      <div class="modal-footer">
-        
-      </div>
+    <div class="modal-footer">
+      
     </div>
   </div>
+</div>
+</div>
+
+<!------------------------------- contact us modal ------------------------------->
+<div class="modal fade" id="ContactUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
+      <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    
+    <div class="modal-body" id="about">
+
+      <main>
+        <div class="contact-us container">
+          <h2>Contact Us</h2>
+          <p>We would love to hear from you! If you have any questions, suggestions, or feedback, please feel free to reach out to us.</p>
+          <div class="contact-details">
+            <div class="contact-info">
+              <h3>Email</h3>
+              <p><a href="mailto:info@kitchenkonnect.com">info@kitchenkonnect.com</a></p>
+            </div>
+            <div class="contact-info">
+              <h3>Phone</h3>
+              <p>+1-123-456-7890</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" required></textarea>
+              <button type="submit" class="btn btn-secondary form-control mt-3">Send</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+      
+
+    <div class="modal-footer">
+      
+    </div>
+  </div>
+</div>
+</div>
+
+<!------------------------------- Terms modal ------------------------------->
+<div class="modal fade" id="TermsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header" style="background-color: rgba(119, 39, 12, 0.729);">
+      <h2 class="modal-title fs-4 text-light" id="staticBackdropLabel">KitchenKonnect</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    
+    <div class="modal-body" id="contactUs">
+
+        <div class="container">
+          <h1>Terms of Service</h1>
+    <p>Please read these terms of service carefully before using our website.</p>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using KitchenKonnect, you agree to be bound by these terms of service, our privacy policy, and any additional terms and conditions that may apply to specific sections of our website or services.</p>
+    <h2>2. User Conduct</h2>
+    <p>You are solely responsible for any content you post or contribute to KitchenKonnect. You agree not to engage in any of the following activities:</p>
+    <ul>
+      <li>Violating any applicable laws or regulations</li>
+      <li>Posting or sharing inappropriate, offensive, or harmful content</li>
+      <li>Impersonating any person or entity</li>
+      <li>Interfering with or disrupting the operation of the website</li>
+      <li>Attempting to gain unauthorized access to any part of the website</li>
+    </ul>
+    <h2>3. Intellectual Property</h2>
+    <p>All content on KitchenKonnect, including recipes, images, logos, and trademarks, is protected by intellectual property laws. You may not use, reproduce, or distribute any content from the website without prior written permission.</p>
+    <h2>4. Limitation of Liability</h2>
+    <p>KitchenKonnect and its owners will not be liable for any direct, indirect, incidental, consequential, or exemplary damages arising from the use or inability to use the website or its content.</p>
+    <h2>5. Modifications to Terms</h2>
+    <p>We reserve the right to modify or update these terms of service at any time without prior notice. It is your responsibility to review the terms periodically for any changes.</p>
+
+        </div>
+
+    </div>
+      
+
+    <div class="modal-footer">
+      
+    </div>
+  </div>
+</div>
 </div>
 
   <!------------------------------- Scripts ------------------------------->
